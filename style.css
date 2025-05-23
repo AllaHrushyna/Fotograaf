@@ -17,6 +17,8 @@ body {
     margin: 0;
     background-color: rgb(243, 246, 250);
     font-family: Quicksand Variable;
+    width:100%;  
+    overflow-x: hidden;
 }
 
 h2 {
@@ -31,7 +33,7 @@ h2 {
     text-shadow: 10px 10px 20px rgb(0, 0, 0);
     position: absolute;
     text-align: center;
-    width: 100vw;
+    width: 100%;
 }
 
 .title-2 {
@@ -41,6 +43,7 @@ h2 {
     text-decoration: underline;
     text-align: center;
     text-shadow: 2px 2px 5px #faf8f8, 7px 7px 10px rgb(73, 1, 1);
+    width: 100%;
 }
 
 .navigation {
@@ -143,7 +146,7 @@ transition: ease all 0.8s;
     height: 500px;
     padding: 35px;
     background-color: rgb(148, 156, 167);
-}  
+ }  
 
 .img-carrousel-2 img, .img-carrousel-3 img, .img-carrousel-4 img, .img-carrousel-5 img{
     height: 500px;
