@@ -1,16 +1,76 @@
 
+/*tekst*/
+
+@font-face {
+    font-family: Quicksand Variable;
+    src: url(Fonts/Quicksand-VariableFont_wght.ttf);}
+
+@font-face {
+    font-family: Cinzel-Medium;
+    src: url(Fonts/Cinzel/Cinzel-Medium.ttf);}
+
+@font-face {
+    font-family: Cinzel-Bold;
+    src: url(Fonts/Cinzel/Cinzel-Bold.ttf);}
+
 body {
     margin: 0;
     background-color: rgb(221, 229, 238);
+    font-family: Cinzel-Bold;
+}
+
+h2 {
+    margin: 10px;
 }
 
 .title {
     color: rgb(210, 241, 96);
     font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
     font-style: italic;
-    text-shadow: 5px 5px 15px rgb(0, 0, 0);
+    text-shadow: 10px 10px 15px rgb(0, 0, 0);
+    position: absolute;
+    text-align: center;
+    width: 100vw;
 }
+
+.title-2 {
+    font-size: 60px;
+    color: rgb(73, 1, 1);
+    text-align: center;
+    text-shadow: 2px 2px 5px #faf8f8, 7px 7px 10px rgb(73, 1, 1);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+
+.navigation p {
+font-size: 40px;
+font-weight: bold;
+background-color: rgb(234, 240, 245);
+text-shadow: 5px 5px 7px #757575;
+margin: 10px;
+margin-top: 0;
+padding: 15px 80px 15px 80px;
+font-style: italic;
+border-radius: 15px;
+box-shadow: 1px 1px 0 0 rgba(255, 255, 255, 0.8) inset,
+			5px 7px 12px 1px rgba(0, 0, 0, 0.205);
+            transition: ease all 0.3s;
+}
+
+.navigation p:hover {
+    box-shadow: 10px 10px 10px rgb(78, 72, 72);
+    cursor: pointer;
+    
+    transform: scale(1.1);
+}
+
 /*img*/
 
 .img-single img {
@@ -72,48 +132,5 @@ body {
 }
 
 
-/*tekst*/
 
-.title-2 {
-    font-size: 50px;
-    color: rgb(73, 1, 1);
-}
 
-h2 {
-    margin: 10px;
-}
-
-.navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-bottom: 25px;
-    padding-top: 15px;
-}
-
-.navigation p {
-font-size: 40px;
-font-weight: bold;
-background-color: rgb(234, 240, 245);
-margin: 10px;
-margin-top: 0;
-padding: 15px 80px 15px 80px;
-font-style: italic;
-border-radius: 15px;
-box-shadow: 1px 1px 0 0 rgba(255, 255, 255, 0.8) inset,
-			5px 7px 12px 1px rgba(0, 0, 0, 0.205);
-            transition: ease all 0.3s;
-}
-
-.navigation p:hover {
-    box-shadow: 10px 10px 10px rgb(78, 72, 72);
-    cursor: pointer;
-    
-    transform: scale(1.1);
-}
-
-.title {
-    position: absolute;
-    text-align: center;
-    width: 100vw;
-}
