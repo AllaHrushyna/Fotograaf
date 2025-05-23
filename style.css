@@ -1,7 +1,7 @@
 
 body {
     margin: 0;
-    background-color: rgb(193, 204, 216);
+    background-color: rgb(221, 229, 238);
 }
 
 .title {
@@ -23,26 +23,32 @@ body {
 
 .img-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 65px;
-    padding: 5px;
+    padding: 35px;
+    background-color: rgb(144, 144, 145);
 }
 
 .img-grid img {
-    width: 100%;
+    width: 300px;
     height: 400px;
     object-fit: cover;
     border-radius: 15px;
-    transition: transform 0.3 ease-in-out;
-    
+    box-shadow: 1px 1px 0 0 rgba(255, 255, 255, 0.8) inset,
+			5px 7px 12px 1px rgba(0, 0, 0, 0.205);
+    transition: ease all 0.3s;
+    /*will-change: color, text-shadow, font-size;*/
 }
 
 .img-grid img:hover {
     transform: scale(1.1);
     transition: ease all 0.8s;
-    cursor: grab;
-    box-shadow: 10px 10px 10px rgb(78, 72, 72);
+    cursor: pointer;
+    box-shadow: 15px 15px 15px rgb(19, 17, 17);
+    transform: scale(1.1);
+    /*transition: transform 0.3 ease-in-out;*/
 }
+
 
 .img-carrousel-1 {
     display: flex;
@@ -61,12 +67,21 @@ body {
     height: 500px;
 }  
 
-
 .img-carrousel-2 img, .img-carrousel-3 img, .img-carrousel-4 img, .img-carrousel-5 img{
     height: 500px;
 }
 
+
 /*tekst*/
+
+.title-2 {
+    font-size: 50px;
+    color: rgb(73, 1, 1);
+}
+
+h2 {
+    margin: 10px;
+}
 
 .navigation {
     display: flex;
@@ -76,33 +91,25 @@ body {
     padding-top: 15px;
 }
 
-.title-2 {
-    font-size: 50px;
-    color: rgb(73, 1, 1);
-}
-
-
-
-h2 {
-    margin: 10px;
-}
-
-
 .navigation p {
 font-size: 40px;
 font-weight: bold;
 background-color: rgb(234, 240, 245);
 margin: 10px;
 margin-top: 0;
-padding: 10px 40px 10px 40px;
+padding: 15px 80px 15px 80px;
 font-style: italic;
 border-radius: 15px;
+box-shadow: 1px 1px 0 0 rgba(255, 255, 255, 0.8) inset,
+			5px 7px 12px 1px rgba(0, 0, 0, 0.205);
+            transition: ease all 0.3s;
 }
 
 .navigation p:hover {
     box-shadow: 10px 10px 10px rgb(78, 72, 72);
     cursor: pointer;
-    transition: transform 0.3 ease-in-out;
+    
+    transform: scale(1.1);
 }
 
 .title {
